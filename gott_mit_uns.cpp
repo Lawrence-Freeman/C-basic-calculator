@@ -3,7 +3,7 @@ using namespace std;
 int main () {
 
 
-int numero1, numero2;
+double numero1, numero2;
 int vibb;
 
 cout << "diga o primeiro numero para a operacao \n";
@@ -23,9 +23,12 @@ cout << "adicao (+), digite 1\n\n"
             cout << "a subtracao dos numeros e: " << numero1 - numero2 << "\n";
         } else if (vibb ==3) {
             cout << "a divisao dos numeros e: " << numero1 / numero2 << "\n";
-            if (numero2 ==0) cout << "erro, dividido por 0\n";
-            return 0;
+           if (numero2 == 0) {
+    cout << "erro, divisao por zero\n";
+} else {
+    cout << "a divisao dos numeros e: " << numero1 / numero2 << "\n";
+}
         } else if (vibb ==4) {
             cout << "a multiplicacao dos numeros e: " << numero1 * numero2 << "\n";
         }
-         }  
+    } 
